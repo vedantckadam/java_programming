@@ -1,0 +1,26 @@
+class Student
+{
+    public String Name;
+    public int Marks;
+    public int Age;
+
+    Student(String A,int B,int C)
+    {
+        this.Name=A;
+        this.Age=B;
+        this.Marks=C;
+    }
+    public String toString()
+    {
+        return "Name : "+this.Name+" Age : "+this.Age+" Marks: "+this.Marks;
+    }
+}
+
+class  toStringDemoStudentX
+{
+    public static void main(String[] args)
+    {
+       Student sobj=new Student("Amit", 27, 98);
+       System.out.println(sobj);
+    }
+}
